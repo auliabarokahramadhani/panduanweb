@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Metamorfosis (MESIFOS)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa 0%, #80deea 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            max-width: 800px;
+            width: 90%;
+        }
+        h1 { color: #00796b; margin-bottom: 20px; }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .menu-item {
+            background: #4db6ac;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.2s;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: bold;
+        }
+        .menu-item:hover {
+            background: #26a69a;
+            transform: translateY(-5px);
+        }
+        .video-container {
+            margin-top: 20px;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .status-bar {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Media Metamorfosis (MESIFOS)</h1>
+    
+    <div class="video-container">
+        <!-- Embed video panduan dari YouTube -->
+        <iframe src="videoplayback.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="status-bar">
+        Video Panduan: <b>Panduan Penggunaan Media Web Metamorfosis</b> oleh Nurlaila K
+    </div>
+</div>
+
+</body>
+</html>
